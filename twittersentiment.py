@@ -88,7 +88,7 @@ st.set_page_config(
 # Create a Streamlit app
 def main():
     # Display header image
-    st.image("https://iliyaz.hashnode.dev/twitter-sentiment-analysis", use_column_width=True)
+    st.image("https://blog.datumbox.com/wp-content/uploads/2013/09/twitter2-720x540.jpg", use_column_width=True)
 
     # Set title and description
     st.title('Sentiment Analysis of Covid-19 Vaccine Tweets')
@@ -97,8 +97,6 @@ def main():
     # User input for prediction
     text_input = st.text_area('Enter text for sentiment analysis:', '', height=150)
 
-    # Apply TF-IDF vectorization
-    tfidf_vectorizer = TfidfVectorizer()
 
     # Combine preprocessing steps into a pipeline
     pipeline = Pipeline([

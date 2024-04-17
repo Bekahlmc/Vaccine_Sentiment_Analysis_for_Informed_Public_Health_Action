@@ -3,3 +3,6 @@
 Data/cleaned_tweets.csv
 .Data/cleaned_tweets.csv
 cleaned_tweets.csv
+sentiment_pipeline.pkl
+sentiment_model.pkl
+twittersentiment.py
