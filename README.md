@@ -33,23 +33,42 @@ Cleaning the text in this column required removing emojis, slang, URLs, username
 I then tokenized, removed stopwords, and lemmatized the text.
 
 <p align="center">
-  <img src = https://content.presspage.com/uploads/2110/1920_potsvaccination.jpeg?10000>
+  <img src = Images/corpusMCW.png>
 </p> 
 
 <p align="center">
-  <img src = https://content.presspage.com/uploads/2110/1920_potsvaccination.jpeg?10000>
+  <img src = Images/corpuswordcloud.png>
 </p> 
 
 ## 2. Assigning Sentiment
 
 Next, I used extensive lists of [positive](https://gist.github.com/mkulakowski2/4289437) words and [negative](https://gist.github.com/mkulakowski2/4289441) words to assign a score to each word (-1 for negative, 1 for positive, and 0 for neutral). I then added these scores together for each tweet to determine its 'sentiment_score.' If the score is positive, I'll labeled the tweet as "Positive"; if negative, as "Negative"; and if 0, as "Neutral."
 
+#### Most Common Positive Words
 <p align="center">
-  <img src = https://content.presspage.com/uploads/2110/1920_potsvaccination.jpeg?10000>
+  <img src = Images/positivewordcounts.png>
 </p> 
 
 <p align="center">
-  <img src = https://content.presspage.com/uploads/2110/1920_potsvaccination.jpeg?10000>
+  <img src = Images/positivewordcloud.png>
+</p> 
+
+#### Most Common Negative Words
+<p align="center">
+  <img src = Images/negativewordcounts.png>
+</p> 
+
+<p align="center">
+  <img src = Images/negativewordcloud.png>
+</p> 
+
+#### Most Common Neutral Words
+<p align="center">
+  <img src = Images/neutralwordcounts.png>
+</p> 
+
+<p align="center">
+  <img src = Images/neutralwordcloud.png>
 </p> 
 
 ## 3. Modeling
