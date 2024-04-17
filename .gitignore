@@ -6,3 +6,4 @@ cleaned_tweets.csv
 sentiment_pipeline.pkl
 sentiment_model.pkl
 twittersentiment.py
+.sentiment_pipeline.pkl
