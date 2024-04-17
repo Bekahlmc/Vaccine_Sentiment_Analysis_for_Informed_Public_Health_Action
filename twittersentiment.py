@@ -10,6 +10,11 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import FunctionTransformer
 import joblib
 
+stop_words = set(stopwords.words('english'))
+
+# Initialize WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+
 # Define custom functions
 def cleaner(input_data):
     cleaned_data = []
@@ -69,6 +74,9 @@ def join_tokens_into_string(token_lists):
 # Load the pickled model
 model = joblib.load('sentiment_model.pkl')
 
+# Load the pickled TfidfVectorizer
+tfidf_vectorizer = joblib.load('tfidf_vectorizer.pkl')
+
 # Set page configuration
 st.set_page_config(
     page_title="Sentiment Analysis App",
@@ -80,7 +88,7 @@ st.set_page_config(
 # Create a Streamlit app
 def main():
     # Display header image
-    st.image("header_image.png", use_column_width=True)
+    st.image("https://iliyaz.hashnode.dev/twitter-sentiment-analysis", use_column_width=True)
 
     # Set title and description
     st.title('Sentiment Analysis of Covid-19 Vaccine Tweets')
