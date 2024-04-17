@@ -1,2 +1,5 @@
 .DS_Store
 .ipynb_checkpoints/
+Data/cleaned_tweets.csv
+.Data/cleaned_tweets.csv
+cleaned_tweets.csv
