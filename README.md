@@ -136,6 +136,12 @@ Last assessments of model results:
 - Naive Bayes performed the poorest in classifying all sentiments of tweets.
 - I anticipated Random Forest to perform better, given its status as an ensemble method known for handling class imbalance well. However, it struggled to differentiate between neutral and negative sentiments and neutral and positive sentiments.
 
+## 5. App Deployment
+
+I used my trained and tuned SVM model to make an app to analyze new tweets concerning Covid-19 vaccines. This will serve as a tool to keep a gauge of public sentiment and will hopefully aid with continued vaccination efforts.
+
+[Sentiment App](https://covid19vaccinetwittersentiment.streamlit.app/)
+
 ## Repository Structure
 
 ```
