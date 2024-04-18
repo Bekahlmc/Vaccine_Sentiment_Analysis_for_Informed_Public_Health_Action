@@ -73,17 +73,51 @@ Next, I used extensive lists of [positive](https://gist.github.com/mkulakowski2/
 
 ## 3. Modeling
 
+After thorough hyperparametric tuning, the four models I made and tested had the following results:
+
 ### Logistic Regression
 
+<p align="center">
+  <img src = Images/lorgregcm.png>
+</p> 
+
+#### **Logistic Regression Evaluation**
+
+After hyperparameter tuning, my logistic regression model achieved an accuracy score of 0.96, with scores of 0.92 or higher across all metrics.
+
+The model performed much better at distinguishing between 'Positive' and 'Negative' sentiments than between 'Neutral' and others.
 
 ### Naive Bayes
 
+<p align="center">
+  <img src = Images/naivebayescm.png>
+</p> 
+
+#### **Naive Bayes Evaluation**
+
+After hyperparameter tuning, the Naive Bayes model did not perform as well as the Logistic Regression model. The maximum accuracy achieved by Naive Bayes was 0.79. This model performed significantly worse at misclassifying tweets as either 'Positive' or 'Negative'.
 
 ### Random Forest
 
+<p align="center">
+  <img src = Images/randomforestcm.png>
+</p> 
+
+#### **Random Forest Evaluation**
+
+Hyperparameter tuning had minimal impact on the performance metrics of my Random Forest models. It did outperform Naive Bayes, but it only achieved an accuracy of 0.88. Logistic regression remains the front-runner far.
 
 ### Support Vector Machine
 
+<p align="center">
+  <img src = Images/svmcm.png>
+</p> 
+
+#### **SVM Evaluation**
+
+The hyperparametric tuned SVM model performed the best at classifying the sentiment of the tweets, with an accuracy score of 0.98. 
+
+Across the board, all metrics are 0.97 or higher!
 
 ## 4. Results
 
@@ -102,8 +136,13 @@ Last assessments of model results:
 - Naive Bayes performed the poorest in classifying all sentiments of tweets.
 - I anticipated Random Forest to perform better, given its status as an ensemble method known for handling class imbalance well. However, it struggled to differentiate between neutral and negative sentiments and neutral and positive sentiments.
 
-## 5. Deployment
+## Repository Structure
 
-Below is the code for deploying the model and exporting the cleaned dataset.
-
-The web app for this model can be found at ......
+```
+├──.devcontainer
+├── Data
+├── Images
+├── README.md
+├── Vaccine_Sentiment_Analysis_for_Informed_Public_Health_Action.ipynb
+└── Vaccine_Sentiment_Analysis_for_Informed_Public_Health_Action.pdf
+```
